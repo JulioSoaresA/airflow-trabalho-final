@@ -1,0 +1,74 @@
+[2023-12-15T09:48:46.103-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-07-30T00:00:00+00:00 [queued]>
+[2023-12-15T09:48:46.114-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-07-30T00:00:00+00:00 [queued]>
+[2023-12-15T09:48:46.115-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T09:48:46.131-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-07-30 00:00:00+00:00
+[2023-12-15T09:48:46.135-0300] {standard_task_runner.py:57} INFO - Started process 42368 to run task
+[2023-12-15T09:48:46.139-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-07-30T00:00:00+00:00', '--job-id', '577', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmpf9n01hky']
+[2023-12-15T09:48:46.141-0300] {standard_task_runner.py:85} INFO - Job 577: Subtask store_folder
+[2023-12-15T09:48:46.184-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-07-30T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T09:48:46.255-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-07-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-30T00:00:00+00:00'
+[2023-12-15T09:48:46.279-0300] {upload_mongo.py:37} INFO - Inserting part-00000-a6e8f18b-a573-4b60-9d3a-6cc0cd21b30f-c000.json into MongoDB teste
+[2023-12-15T09:48:46.280-0300] {upload_mongo.py:38} INFO - Inserting {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-14","n_tweets":10,"n_like":708,"n_quote":554,"n_reply":520,"n_retweet":376,"weekday":"Thu"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+{"created_date":"2023-12-13","n_tweets":9,"n_like":376,"n_quote":475,"n_reply":636,"n_retweet":510,"weekday":"Wed"}
+ into MongoDB
+[2023-12-15T09:48:46.280-0300] {upload_mongo.py:39} INFO - Inserting part-00000-a6e8f18b-a573-4b60-9d3a-6cc0cd21b30f-c000.json into MongoDB
+[2023-12-15T09:48:46.280-0300] {upload_mongo.py:40} INFO - Inserting Gold into MongoDB
+[2023-12-15T09:48:46.280-0300] {upload_mongo.py:41} INFO - Inserting twitter_datascience into MongoDB
+[2023-12-15T09:48:46.280-0300] {upload_mongo.py:42} INFO - Inserting process_date=2023-12-14 into MongoDB
+[2023-12-15T09:48:46.280-0300] {upload_mongo.py:37} INFO - Inserting part-00000-ec5d6908-635a-4179-9076-f331c745d448-c000.json into MongoDB teste
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:38} INFO - Inserting {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+ into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:39} INFO - Inserting part-00000-ec5d6908-635a-4179-9076-f331c745d448-c000.json into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:40} INFO - Inserting Gold into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:41} INFO - Inserting twitter_datascience into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:42} INFO - Inserting process_date=2023-12-10 into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:37} INFO - Inserting part-00000-9d5698a9-cb21-47a8-8456-c735cc268e32-c000.json into MongoDB teste
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:38} INFO - Inserting {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+ into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:39} INFO - Inserting part-00000-9d5698a9-cb21-47a8-8456-c735cc268e32-c000.json into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:40} INFO - Inserting Gold into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:41} INFO - Inserting twitter_datascience into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:42} INFO - Inserting process_date=2023-12-11 into MongoDB
+[2023-12-15T09:48:46.281-0300] {upload_mongo.py:37} INFO - Inserting part-00000-6a855ed2-76b4-47b6-a221-5acb58438d3a-c000.json into MongoDB teste
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:38} INFO - Inserting {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+ into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:39} INFO - Inserting part-00000-6a855ed2-76b4-47b6-a221-5acb58438d3a-c000.json into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:40} INFO - Inserting Gold into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:41} INFO - Inserting twitter_datascience into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:42} INFO - Inserting process_date=2023-12-09 into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:37} INFO - Inserting part-00000-3b25e8b8-cf37-4a3d-ab00-bba819518e32-c000.json into MongoDB teste
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:38} INFO - Inserting {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-14","n_tweets":10,"n_like":708,"n_quote":554,"n_reply":520,"n_retweet":376,"weekday":"Thu"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+{"created_date":"2023-12-13","n_tweets":9,"n_like":376,"n_quote":475,"n_reply":636,"n_retweet":510,"weekday":"Wed"}
+ into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:39} INFO - Inserting part-00000-3b25e8b8-cf37-4a3d-ab00-bba819518e32-c000.json into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:40} INFO - Inserting Gold into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:41} INFO - Inserting twitter_datascience into MongoDB
+[2023-12-15T09:48:46.282-0300] {upload_mongo.py:42} INFO - Inserting process_date=2023-12-13 into MongoDB
+[2023-12-15T09:48:46.283-0300] {upload_mongo.py:37} INFO - Inserting part-00000-49e969fc-b8c2-4688-a3c5-5e803f927e50-c000.json into MongoDB teste
+[2023-12-15T09:48:46.283-0300] {upload_mongo.py:38} INFO - Inserting {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+ into MongoDB
+[2023-12-15T09:48:46.283-0300] {upload_mongo.py:39} INFO - Inserting part-00000-49e969fc-b8c2-4688-a3c5-5e803f927e50-c000.json into MongoDB
+[2023-12-15T09:48:46.283-0300] {upload_mongo.py:40} INFO - Inserting Gold into MongoDB
+[2023-12-15T09:48:46.283-0300] {upload_mongo.py:41} INFO - Inserting twitter_datascience into MongoDB
+[2023-12-15T09:48:46.283-0300] {upload_mongo.py:42} INFO - Inserting process_date=2023-12-12 into MongoDB
+[2023-12-15T09:48:46.284-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T09:48:46.293-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230730T000000, start_date=20231215T124846, end_date=20231215T124846
+[2023-12-15T09:48:46.313-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T09:48:46.324-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

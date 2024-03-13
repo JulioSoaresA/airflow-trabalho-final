@@ -1,0 +1,162 @@
+[2023-12-15T08:48:59.028-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T08:48:59.034-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T08:48:59.034-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T08:48:59.052-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-01-19 00:00:00+00:00
+[2023-12-15T08:48:59.056-0300] {standard_task_runner.py:57} INFO - Started process 6124 to run task
+[2023-12-15T08:48:59.059-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-01-19T00:00:00+00:00', '--job-id', '385', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmpc6f9avl3']
+[2023-12-15T08:48:59.060-0300] {standard_task_runner.py:85} INFO - Job 385: Subtask store_folder
+[2023-12-15T08:48:59.099-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T08:48:59.162-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-01-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-19T00:00:00+00:00'
+[2023-12-15T08:49:00.278-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T08:49:00.284-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230119T000000, start_date=20231215T114859, end_date=20231215T114900
+[2023-12-15T08:49:00.323-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T08:49:00.330-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-15T09:26:53.401-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T09:26:53.408-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T09:26:53.408-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T09:26:53.424-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-01-19 00:00:00+00:00
+[2023-12-15T09:26:53.427-0300] {standard_task_runner.py:57} INFO - Started process 27200 to run task
+[2023-12-15T09:26:53.429-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-01-19T00:00:00+00:00', '--job-id', '385', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmp8e28xaq3']
+[2023-12-15T09:26:53.430-0300] {standard_task_runner.py:85} INFO - Job 385: Subtask store_folder
+[2023-12-15T09:26:53.466-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T09:26:53.526-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-01-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-19T00:00:00+00:00'
+[2023-12-15T09:26:53.573-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-a6e8f18b-a573-4b60-9d3a-6cc0cd21b30f-c000.json no MongoDB
+[2023-12-15T09:26:53.573-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-14","n_tweets":10,"n_like":708,"n_quote":554,"n_reply":520,"n_retweet":376,"weekday":"Thu"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+{"created_date":"2023-12-13","n_tweets":9,"n_like":376,"n_quote":475,"n_reply":636,"n_retweet":510,"weekday":"Wed"}
+
+[2023-12-15T09:26:53.573-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:26:53.573-0300] {upload_mongo.py:40} INFO - api_nome: process_date=2023-12-14
+[2023-12-15T09:26:53.573-0300] {upload_mongo.py:41} INFO - extracao_nome: twitter_datascience
+[2023-12-15T09:26:53.573-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-ec5d6908-635a-4179-9076-f331c745d448-c000.json no MongoDB
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:40} INFO - api_nome: process_date=2023-12-10
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:41} INFO - extracao_nome: twitter_datascience
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-9d5698a9-cb21-47a8-8456-c735cc268e32-c000.json no MongoDB
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:40} INFO - api_nome: process_date=2023-12-11
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:41} INFO - extracao_nome: twitter_datascience
+[2023-12-15T09:26:53.574-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-6a855ed2-76b4-47b6-a221-5acb58438d3a-c000.json no MongoDB
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:40} INFO - api_nome: process_date=2023-12-09
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:41} INFO - extracao_nome: twitter_datascience
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-3b25e8b8-cf37-4a3d-ab00-bba819518e32-c000.json no MongoDB
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-14","n_tweets":10,"n_like":708,"n_quote":554,"n_reply":520,"n_retweet":376,"weekday":"Thu"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+{"created_date":"2023-12-13","n_tweets":9,"n_like":376,"n_quote":475,"n_reply":636,"n_retweet":510,"weekday":"Wed"}
+
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:40} INFO - api_nome: process_date=2023-12-13
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:41} INFO - extracao_nome: twitter_datascience
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-49e969fc-b8c2-4688-a3c5-5e803f927e50-c000.json no MongoDB
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:26:53.575-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:26:53.576-0300] {upload_mongo.py:40} INFO - api_nome: process_date=2023-12-12
+[2023-12-15T09:26:53.576-0300] {upload_mongo.py:41} INFO - extracao_nome: twitter_datascience
+[2023-12-15T09:26:53.576-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T09:26:53.586-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230119T000000, start_date=20231215T122653, end_date=20231215T122653
+[2023-12-15T09:26:53.643-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T09:26:53.651-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-15T09:28:50.654-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T09:28:50.662-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T09:28:50.662-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T09:28:50.678-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-01-19 00:00:00+00:00
+[2023-12-15T09:28:50.682-0300] {standard_task_runner.py:57} INFO - Started process 27963 to run task
+[2023-12-15T09:28:50.685-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-01-19T00:00:00+00:00', '--job-id', '385', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmpt1rgkiy1']
+[2023-12-15T09:28:50.686-0300] {standard_task_runner.py:85} INFO - Job 385: Subtask store_folder
+[2023-12-15T09:28:50.727-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T09:28:50.784-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-01-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-19T00:00:00+00:00'
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-a6e8f18b-a573-4b60-9d3a-6cc0cd21b30f-c000.json no MongoDB
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-14","n_tweets":10,"n_like":708,"n_quote":554,"n_reply":520,"n_retweet":376,"weekday":"Thu"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+{"created_date":"2023-12-13","n_tweets":9,"n_like":376,"n_quote":475,"n_reply":636,"n_retweet":510,"weekday":"Wed"}
+
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:40} INFO - api_nome: twitter_datascience
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:41} INFO - extracao_nome: process_date=2023-12-14
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-ec5d6908-635a-4179-9076-f331c745d448-c000.json no MongoDB
+[2023-12-15T09:28:50.801-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:40} INFO - api_nome: twitter_datascience
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:41} INFO - extracao_nome: process_date=2023-12-10
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-9d5698a9-cb21-47a8-8456-c735cc268e32-c000.json no MongoDB
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:40} INFO - api_nome: twitter_datascience
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:41} INFO - extracao_nome: process_date=2023-12-11
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-6a855ed2-76b4-47b6-a221-5acb58438d3a-c000.json no MongoDB
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:40} INFO - api_nome: twitter_datascience
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:41} INFO - extracao_nome: process_date=2023-12-09
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-3b25e8b8-cf37-4a3d-ab00-bba819518e32-c000.json no MongoDB
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-14","n_tweets":10,"n_like":708,"n_quote":554,"n_reply":520,"n_retweet":376,"weekday":"Thu"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+{"created_date":"2023-12-13","n_tweets":9,"n_like":376,"n_quote":475,"n_reply":636,"n_retweet":510,"weekday":"Wed"}
+
+[2023-12-15T09:28:50.802-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:40} INFO - api_nome: twitter_datascience
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:41} INFO - extracao_nome: process_date=2023-12-13
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:37} INFO - Inserindo dados do arquivo part-00000-49e969fc-b8c2-4688-a3c5-5e803f927e50-c000.json no MongoDB
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:38} INFO - json_data: {"created_date":"2023-12-10","n_tweets":10,"n_like":571,"n_quote":510,"n_reply":408,"n_retweet":535,"weekday":"Sun"}
+{"created_date":"2023-12-11","n_tweets":42,"n_like":2393,"n_quote":2357,"n_reply":2964,"n_retweet":2415,"weekday":"Mon"}
+{"created_date":"2023-12-12","n_tweets":10,"n_like":512,"n_quote":399,"n_reply":435,"n_retweet":420,"weekday":"Tue"}
+{"created_date":"2023-12-09","n_tweets":19,"n_like":1131,"n_quote":1109,"n_reply":1150,"n_retweet":912,"weekday":"Sat"}
+
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:39} INFO - medalha: Gold
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:40} INFO - api_nome: twitter_datascience
+[2023-12-15T09:28:50.803-0300] {upload_mongo.py:41} INFO - extracao_nome: process_date=2023-12-12
+[2023-12-15T09:28:50.803-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T09:28:50.810-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230119T000000, start_date=20231215T122850, end_date=20231215T122850
+[2023-12-15T09:28:50.858-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T09:28:50.866-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-15T09:32:28.955-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T09:32:28.964-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [queued]>
+[2023-12-15T09:32:28.964-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T09:32:28.981-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-01-19 00:00:00+00:00
+[2023-12-15T09:32:28.985-0300] {standard_task_runner.py:57} INFO - Started process 31378 to run task
+[2023-12-15T09:32:28.988-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-01-19T00:00:00+00:00', '--job-id', '385', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmpc_y_5q1q']
+[2023-12-15T09:32:28.989-0300] {standard_task_runner.py:85} INFO - Job 385: Subtask store_folder
+[2023-12-15T09:32:29.028-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-01-19T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T09:32:29.095-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-01-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-19T00:00:00+00:00'
+[2023-12-15T09:32:30.128-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T09:32:30.132-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230119T000000, start_date=20231215T123228, end_date=20231215T123230
+[2023-12-15T09:32:30.170-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T09:32:30.178-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

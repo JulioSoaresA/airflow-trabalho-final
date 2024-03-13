@@ -1,0 +1,26 @@
+[2023-12-15T08:50:40.513-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-02-12T00:00:00+00:00 [queued]>
+[2023-12-15T08:50:40.520-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-02-12T00:00:00+00:00 [queued]>
+[2023-12-15T08:50:40.520-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T08:50:40.536-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-02-12 00:00:00+00:00
+[2023-12-15T08:50:40.539-0300] {standard_task_runner.py:57} INFO - Started process 7683 to run task
+[2023-12-15T08:50:40.542-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-02-12T00:00:00+00:00', '--job-id', '409', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmpzvzf5usl']
+[2023-12-15T08:50:40.544-0300] {standard_task_runner.py:85} INFO - Job 409: Subtask store_folder
+[2023-12-15T08:50:40.580-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-02-12T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T08:50:40.653-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-02-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-02-12T00:00:00+00:00'
+[2023-12-15T08:50:41.866-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T08:50:41.870-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230212T000000, start_date=20231215T115040, end_date=20231215T115041
+[2023-12-15T08:50:41.922-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T08:50:41.932-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-15T09:34:12.294-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-02-12T00:00:00+00:00 [queued]>
+[2023-12-15T09:34:12.302-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-02-12T00:00:00+00:00 [queued]>
+[2023-12-15T09:34:12.302-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T09:34:12.317-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_folder> on 2023-02-12 00:00:00+00:00
+[2023-12-15T09:34:12.321-0300] {standard_task_runner.py:57} INFO - Started process 33353 to run task
+[2023-12-15T09:34:12.324-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_folder', 'scheduled__2023-02-12T00:00:00+00:00', '--job-id', '409', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmp5v457417']
+[2023-12-15T09:34:12.325-0300] {standard_task_runner.py:85} INFO - Job 409: Subtask store_folder
+[2023-12-15T09:34:12.359-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_folder scheduled__2023-02-12T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T09:34:12.427-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-02-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-02-12T00:00:00+00:00'
+[2023-12-15T09:34:13.499-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T09:34:13.505-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_folder, execution_date=20230212T000000, start_date=20231215T123412, end_date=20231215T123413
+[2023-12-15T09:34:13.550-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T09:34:13.560-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

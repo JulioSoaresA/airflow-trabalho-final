@@ -1,0 +1,13 @@
+[2023-12-15T09:10:45.876-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_gold_folder scheduled__2023-03-05T00:00:00+00:00 [queued]>
+[2023-12-15T09:10:45.882-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ArmazenaPastaMongoDBDAG.store_gold_folder scheduled__2023-03-05T00:00:00+00:00 [queued]>
+[2023-12-15T09:10:45.883-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-15T09:10:45.898-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): store_gold_folder> on 2023-03-05 00:00:00+00:00
+[2023-12-15T09:10:45.902-0300] {standard_task_runner.py:57} INFO - Started process 20161 to run task
+[2023-12-15T09:10:45.905-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ArmazenaPastaMongoDBDAG', 'store_gold_folder', 'scheduled__2023-03-05T00:00:00+00:00', '--job-id', '430', '--raw', '--subdir', 'DAGS_FOLDER/upload_mongo.py', '--cfg-path', '/tmp/tmpwdpoaf66']
+[2023-12-15T09:10:45.906-0300] {standard_task_runner.py:85} INFO - Job 430: Subtask store_gold_folder
+[2023-12-15T09:10:45.939-0300] {task_command.py:416} INFO - Running <TaskInstance: ArmazenaPastaMongoDBDAG.store_gold_folder scheduled__2023-03-05T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T09:10:46.005-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ArmazenaPastaMongoDBDAG' AIRFLOW_CTX_TASK_ID='store_gold_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-03-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-03-05T00:00:00+00:00'
+[2023-12-15T09:10:46.021-0300] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-15T09:10:46.027-0300] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ArmazenaPastaMongoDBDAG, task_id=store_gold_folder, execution_date=20230305T000000, start_date=20231215T121045, end_date=20231215T121046
+[2023-12-15T09:10:46.078-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-15T09:10:46.086-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

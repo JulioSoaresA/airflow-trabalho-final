@@ -1,0 +1,22 @@
+[2023-12-15T03:01:30.722-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DownloadMongoDBDAG.retrieve_and_save scheduled__2023-02-01T00:00:00+00:00 [queued]>
+[2023-12-15T03:01:30.729-0300] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DownloadMongoDBDAG.retrieve_and_save scheduled__2023-02-01T00:00:00+00:00 [queued]>
+[2023-12-15T03:01:30.729-0300] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-15T03:01:30.746-0300] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_and_save> on 2023-02-01 00:00:00+00:00
+[2023-12-15T03:01:30.749-0300] {standard_task_runner.py:57} INFO - Started process 84072 to run task
+[2023-12-15T03:01:30.752-0300] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'DownloadMongoDBDAG', 'retrieve_and_save', 'scheduled__2023-02-01T00:00:00+00:00', '--job-id', '348', '--raw', '--subdir', 'DAGS_FOLDER/download_mongo_dag.py', '--cfg-path', '/tmp/tmpav9_qm11']
+[2023-12-15T03:01:30.753-0300] {standard_task_runner.py:85} INFO - Job 348: Subtask retrieve_and_save
+[2023-12-15T03:01:30.794-0300] {task_command.py:416} INFO - Running <TaskInstance: DownloadMongoDBDAG.retrieve_and_save scheduled__2023-02-01T00:00:00+00:00 [running]> on host JulioPC.
+[2023-12-15T03:01:30.866-0300] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='DownloadMongoDBDAG' AIRFLOW_CTX_TASK_ID='retrieve_and_save' AIRFLOW_CTX_EXECUTION_DATE='2023-02-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-02-01T00:00:00+00:00'
+[2023-12-15T03:01:31.715-0300] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/julioubuntu/Projects/EGD/airflow-trabalho-final/venv/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/julioubuntu/Projects/EGD/airflow-trabalho-final/venv/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/julioubuntu/Projects/EGD/airflow-trabalho-final/airflow_pipeline/dags/download_mongo_dag.py", line 32, in retrieve_and_save_data_locally
+    with open(local_file_path, 'w') as local_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/julioubuntu/Projects/EGD/airflow-trabalho-final/datalake/Gold/MongoDB/part-00000-a6e8f18b-a573-4b60-9d3a-6cc0cd21b30f-c000.json'
+[2023-12-15T03:01:31.721-0300] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=DownloadMongoDBDAG, task_id=retrieve_and_save, execution_date=20230201T000000, start_date=20231215T060130, end_date=20231215T060131
+[2023-12-15T03:01:31.734-0300] {standard_task_runner.py:104} ERROR - Failed to execute job 348 for task retrieve_and_save ([Errno 2] No such file or directory: '/home/julioubuntu/Projects/EGD/airflow-trabalho-final/datalake/Gold/MongoDB/part-00000-a6e8f18b-a573-4b60-9d3a-6cc0cd21b30f-c000.json'; 84072)
+[2023-12-15T03:01:31.773-0300] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-15T03:01:31.781-0300] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
